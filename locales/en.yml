@@ -1,0 +1,7 @@
+en:
+  automatic_night_mode:
+    label: Automatic Night Mode
+    enable: Enable automatic night mode
+    start: Start
+    end: End
+    theme: Theme

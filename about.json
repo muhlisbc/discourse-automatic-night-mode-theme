@@ -1,0 +1,8 @@
+{
+  "name": "Automatic Night Mode",
+  "about_url": "https://github.com/muhlisbc/discourse-automatic-night-mode-theme/blob/master/README.md",
+  "license_url": "https://github.com/muhlisbc/discourse-automatic-night-mode-theme/blob/master/LICENSE",
+  "color_schemes": {
+  },
+  "component": true
+}
