@@ -6,6 +6,7 @@
   const themeSelector = require("discourse/lib/theme-selector");
   const currentUser   = api.getCurrentUser();
   const interfaceCtrl = api.container.lookup("controller:preferences/interface");
+  const site          = api.container.lookup("site:main");
   const themes        = interfaceCtrl.get("userSelectableThemes");
 
   interfaceCtrl.reopen({
@@ -54,7 +55,7 @@
   });
 
   function defaultThemeId() {
-    const defaultTheme = Discourse.Site._current.user_themes.find( (t) => t.default );
+    const defaultTheme = site.user_themes.find( (t) => t.default );
 
     if (!defaultTheme) console.warn("No default theme set");
 
